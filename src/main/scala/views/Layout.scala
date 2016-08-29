@@ -87,7 +87,7 @@ object Layout {
       transactions.map { transaction =>
         tr(
           td(transaction.id), td(transaction.status), td(transaction.timestamp.toString), td(transaction.sessionId),
-          td(transaction.orderNumber), td(formatter.format(transaction.purchaseAmount/100)),
+          td(transaction.orderNumber), td(formatter.format(transaction.purchaseAmount)),
           td(transaction.currencyId),
           td(transaction.tbkTransactionData.map(_.tbkCardFinalNumbers)),
           td(transaction.tbkTransactionData.map(_.tbkAuthorizationCode)),
