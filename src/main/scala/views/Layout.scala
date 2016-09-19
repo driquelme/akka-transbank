@@ -78,7 +78,7 @@ object Layout {
   )
 
   def transactionLog(transactions: Seq[Transaction]) = layout("Transaction Log")(
-    table(`class` := "table")(
+    table(`class` := "table table-striped ")(
       tr(
         th("Id"), th("Status"), th("Timestamp"), th("Session Id"), th("Order Number"), th("Purchase Amount"),
         th("Currency"), th("TBK Card Final Numbers"), th("TBK Authorization Code"), th("TBK Tx Date"), th("TBK Tx Time"),
